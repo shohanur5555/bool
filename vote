@@ -1,0 +1,28 @@
+void main(){
+  int age =109;
+  int age2 = 0;
+  
+  bool value = true;
+  
+  if(age <= 17){
+    value = false;
+    age2 = 18 - age;
+  }
+  
+  
+  else if(age == 18 || age > 18){
+    value = true;
+  }
+  
+  else{
+     value = false;
+  }
+  
+  if(value==true){
+    print("Congratulation You are a voeter!");
+  }
+  else{
+     print("You are not a voeter you can given vote after $age2 year");
+  }
+  
+}
