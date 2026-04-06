@@ -1,0 +1,19 @@
+void main(){
+  int a = 1;
+  
+  bool value = false;
+  
+  if(a%2==0){
+    value = true;
+  }
+  else{
+    value = false;
+  }
+  
+  if(value == true){
+    print("$a is a Even number");
+  }
+  else{
+    print("$a is a Odd number");
+  }
+}
