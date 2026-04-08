@@ -1,0 +1,17 @@
+bool pass(int mark, int attend){
+  if(40 <= mark && 75 <= attend){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+void main(){
+  if(pass(50,100)== true){
+    print('Congratulation you are pass!');
+  }
+  else{
+    print('You are failed');
+  }
+  
+}
