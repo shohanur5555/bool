@@ -1,0 +1,15 @@
+bool year(int year){
+  return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+  
+}
+
+void main(){
+  
+  if(year(2024) == true){
+    print("Leap Year");
+  }
+  else{
+    print("No Leap Year!");
+  }
+  
+}
