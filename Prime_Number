@@ -1,0 +1,19 @@
+bool prime(int number){
+  if(number <= 1){
+    return false;
+  }
+  for(int i = 2; i < number; i++){
+    if(number % i == 0){
+      return false;
+    }
+  }
+  return true;
+}
+void main(){
+  if(prime(10)== true){
+    print('It is a prime number ');
+  }
+  else{
+    print('It is not a prime number!..');
+  }
+}
