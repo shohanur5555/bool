@@ -1,29 +1,14 @@
-// A shop gives discount if:
-
-// User is premium OR
-// Total purchase > 5000
-
-// Return true if discount applies.
-
-bool discount(String status, int parches){
-  String member = 'premium';
-  if(status == member && parches < 500){
+bool discount(String status, int purchase){
+  if(status == 'premium' || purchase > 5000){
     return true;
   }
-  else if(status != member && parches >= 500){
-    return true;
-  }
-  
   return false;
-  
 }
 
 void main(){
-  if(discount('premium',400) == true){
-    print('Discount avilable');
-  }
-  else{
-    print('You are not avilable for discount');
+  if(discount('premium', 400)){
+    print('Discount available');
+  } else {
+    print('You are not eligible for discount');
   }
 }
-
